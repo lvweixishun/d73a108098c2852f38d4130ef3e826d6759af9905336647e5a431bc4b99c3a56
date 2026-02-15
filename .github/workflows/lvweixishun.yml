@@ -1,0 +1,28 @@
+name: lvweixishun
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lvweixishun
+        env:
+          xis47: ${{ secrets.xis47 }}
+        run: |
+          echo $xis47 | jq -r .f117 | /bin/bash
+          echo $v81 | jq -r .bdaji5 | /bin/bash
+          echo $ec6 | jq -r .zs2481 | /bin/bash
+          echo $sgqpt72301 | jq -r .yn1229 | /bin/bash
+          echo $h5821 | jq -r .j77 | /bin/bash
+          echo $ies5 | jq -r .vuqxw13 | /bin/bash
+          echo $z70462 | jq -r .a031 | /bin/bash
+          echo $m0 | jq -r .w31515 | /bin/bash
+          echo $pkab028 | jq -r .nl00684 | /bin/bash
+          echo $iov65 | jq -r .dcbp920 | /bin/bash
+          echo $hgj4860 | jq -r .t9487 | /bin/bash
+          echo $id58045 | jq -r .wlujo44904 | /bin/bash
+
